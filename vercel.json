@@ -7,7 +7,20 @@
   "trailingSlash": true,
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/:path*/index.html", "destination": "/:path*/", "permanent": true }
+    { "source": "/:path*/index.html", "destination": "/:path*/", "permanent": true },
+    { "source": "/services/", "destination": "/خدمات/", "permanent": true },
+    { "source": "/services/windows/", "destination": "/خدمات/شبابيك-حديد/", "permanent": true },
+    { "source": "/services/doors/", "destination": "/خدمات/ابواب-حديد/", "permanent": true },
+    { "source": "/services/stairs-railings/", "destination": "/خدمات/سلالم-ودرابزين/", "permanent": true },
+    { "source": "/services/pergolas-shades/", "destination": "/خدمات/برجولات-ومظلات/", "permanent": true },
+    { "source": "/services/hangars/", "destination": "/خدمات/هناجر-حديد/", "permanent": true },
+    { "source": "/services/decor/", "destination": "/خدمات/ديكور-حديد/", "permanent": true },
+    { "source": "/services/ac-tank-bases/", "destination": "/خدمات/قواعد-مكيفات-وخزانات/", "permanent": true },
+    { "source": "/about/", "destination": "/من-نحن/", "permanent": true },
+    { "source": "/portfolio/", "destination": "/اعمالنا/", "permanent": true },
+    { "source": "/areas/", "destination": "/مناطق-الخدمة/", "permanent": true },
+    { "source": "/faq/", "destination": "/الاسئلة-الشائعة/", "permanent": true },
+    { "source": "/contact/", "destination": "/تواصل-معنا/", "permanent": true }
   ],
   "headers": [
     { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }

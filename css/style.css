@@ -7,3 +7,13 @@
 @media(max-width:48rem){:root{--header:4.25rem}.container{width:min(calc(100% - 1.25rem),var(--container))}.brand{width:9rem}.hero{min-height:46rem}.hero-grid{padding-block:calc(var(--header) + 3.5rem) 3.5rem}.hero h1{font-size:clamp(2.35rem,11vw,3.7rem)}.section{padding-block:4rem}.section-heading{display:block}.section-heading p{margin-top:.8rem}.service-grid,.process-grid,.gallery,.contact-cards{grid-template-columns:1fr}.service-card{min-height:20rem}.gallery .wide{grid-column:auto}.gallery img{height:17rem}.footer-grid{grid-template-columns:1fr}.footer-bottom{display:block}.floating-actions{inset:auto .6rem .6rem .6rem;justify-content:flex-end}.float-btn{font-size:.78rem}.page-hero{padding-block:calc(var(--header) + 3.2rem) 3.2rem}.mobile-nav{grid-template-columns:1fr 1fr}}
 @media(max-width:23rem){.mobile-nav,.mobile-actions{grid-template-columns:1fr}.brand{width:8rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Burgundy production theme: every content surface remains dark and cohesive. */
+:root{--paper:#241018;--paper-2:#2f131e;--dark-text:#f8f5f2}
+.section-light{background:linear-gradient(145deg,#2b111c,#1b0e14 72%);color:var(--text)}
+.section-soft{background:#251019}.section-heading p,.copy p{color:#d2c2c7}
+.feature-list li{background:rgba(164,40,76,.12)}
+.process-card{border:1px solid rgba(217,129,155,.18);border-top:3px solid var(--wine-2);background:#2a121c;color:var(--text)}
+.process-card p{color:#d5c5ca}.aside-card{border-color:rgba(217,129,155,.24);background:#2a121c;color:var(--text)}
+.aside-card h3{color:#e39bb1}.faq-list details{border-color:rgba(217,129,155,.22);background:#29121b;color:var(--text)}
+.faq-answer{color:#d5c5ca}.related-links a{border-color:rgba(217,129,155,.36);color:#efafc2}.contact-card{background:#29121b}.text-link{color:#efafc2}
