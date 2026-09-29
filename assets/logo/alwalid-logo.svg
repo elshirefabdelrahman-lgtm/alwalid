@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 72" role="img" aria-labelledby="title desc">
+  <title id="title">ALWALID</title><desc id="desc">شعار الوليد للأعمال الحديدية</desc>
+  <defs><linearGradient id="steel" x1="0" x2="1"><stop stop-color="#f1f2f3"/><stop offset=".46" stop-color="#9da2a8"/><stop offset="1" stop-color="#e2e4e7"/></linearGradient></defs>
+  <path fill="#7c1734" d="M10 57 30 14h15l20 43H50l-4-9H29l-4 9H10Zm23-20h10l-5-12-5 12Z"/>
+  <path fill="url(#steel)" d="M78 14h13v31h21v12H78V14Zm45 0h14l7 24 9-24h11l9 24 7-24h14l-15 43h-11l-9-23-9 23h-11l-16-43Zm87 0h14l18 43h-14l-3-9h-17l-4 9h-13l19-43Zm2 23h10l-5-12-5 12Zm40-23h13v31h20v12h-33V14Zm45 0h13v43h-13V14Z"/>
+  <path fill="#7c1734" d="M318 14h6v43h-6z"/>
+</svg>
