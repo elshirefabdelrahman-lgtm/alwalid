@@ -28,6 +28,7 @@ const publicRoutes={
 const publicRoute=route=>publicRoutes[route]??route;
 const origin=config.origin.replace(/\/$/,'');
 const absoluteUrl=route=>`${origin}/${publicRoute(route)}`;
+const sitemapUrl=route=>encodeURI(absoluteUrl(route));
 const imageSets={
  doors:[['doors/الوليد-ابواب-حديد-01.webp',768,1024,'باب حديد أسود بخطوط رأسية عند مدخل منزل'],['doors/الوليد-ابواب-حديد-02.webp',645,1200,'باب حديد حديث بشرائح أفقية وإطار داكن'],['doors/الوليد-ابواب-حديد-03.webp',768,1024,'باب حديد فاتح بزخرفة دائرية في المنتصف']],
  windows:[['windows/الوليد-شبابيك-حديد-01.webp',938,1024,'حماية شباك حديد بنمط هندسي متكرر'],['windows/الوليد-شبابيك-حديد-02.webp',589,1024,'شبك حماية حديد بلون داكن وزخارف ذهبية'],['windows/الوليد-شبابيك-حديد-03.webp',768,1024,'شباك ألمنيوم داكن بفتحتين زجاجيتين'],['windows/الوليد-شبابيك-حديد-04.webp',1024,768,'حماية نافذة حديد بتكوين منحني فاتح'],['windows/الوليد-شبابيك-حديد-05.webp',575,1024,'شبك نافذة حديد مستطيل بتفاصيل زخرفية'],['windows/الوليد-شبابيك-حديد-06.webp',1021,1024,'نافذة بإطار فاتح ومصراع خارجي']],
@@ -87,5 +88,5 @@ for(const legacy of ['services','about','portfolio','areas','faq','contact']){co
 
 if(origin){for(const route of Object.keys(pages)){const file=join(root,publicRoute(route),'index.html');let html=readFileSync(file,'utf8');html=html.replace('<link rel="canonical" href="./">',`<link rel="canonical" href="${absoluteUrl(route)}">`).replace('<meta property="og:site_name" content="ALWALID | الوليد">',`<meta property="og:site_name" content="ALWALID | الوليد"><meta property="og:url" content="${absoluteUrl(route)}">`).replace(/<meta property="og:image" content="[^"]+">/,`<meta property="og:image" content="${origin}/assets/images/hero/الوليد-حداد-مكة-وجدة-غلاف.webp">`);writeFileSync(file,html)}}
 
-if(config.origin){const urls=Object.keys(pages).map(route=>`${config.origin.replace(/\/$/,'')}/${publicRoute(route)}`).map(url=>`  <url><loc>${url}</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod></url>`).join('\n');writeFileSync(join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);writeFileSync(join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${config.origin.replace(/\/$/,'')}/sitemap.xml\n`)}
+if(config.origin){const urls=Object.keys(pages).map(route=>sitemapUrl(route)).map(url=>`  <url><loc>${url}</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod></url>`).join('\n');writeFileSync(join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);writeFileSync(join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${config.origin.replace(/\/$/,'')}/sitemap.xml\n`)}
 console.log(`Generated ${Object.keys(pages).length} indexable pages plus 404.`);
