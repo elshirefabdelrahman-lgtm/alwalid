@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-# Add the final absolute sitemap URL after the production domain is confirmed.
+Sitemap: https://www.alwalied.com/sitemap.xml

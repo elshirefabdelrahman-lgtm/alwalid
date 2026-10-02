@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- The production domain has not been provided. Run npm run generate after setting site-config.json origin. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.alwalied.com/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/شبابيك-حديد/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/ابواب-حديد/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/سلالم-ودرابزين/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/برجولات-ومظلات/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/هناجر-حديد/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/ديكور-حديد/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/خدمات/قواعد-مكيفات-وخزانات/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/من-نحن/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/اعمالنا/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/مناطق-الخدمة/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/الاسئلة-الشائعة/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.alwalied.com/تواصل-معنا/</loc><lastmod>2026-10-02</lastmod></url>
+</urlset>
