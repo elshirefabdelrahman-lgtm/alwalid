@@ -17,3 +17,7 @@
 .process-card p{color:#d5c5ca}.aside-card{border-color:rgba(217,129,155,.24);background:#2a121c;color:var(--text)}
 .aside-card h3{color:#e39bb1}.faq-list details{border-color:rgba(217,129,155,.22);background:#29121b;color:var(--text)}
 .faq-answer{color:#d5c5ca}.related-links a{border-color:rgba(217,129,155,.36);color:#efafc2}.contact-card{background:#29121b}.text-link{color:#efafc2}
+
+/* Lightweight, crawlable service video. */
+.video-section{background:radial-gradient(circle at 18% 20%,rgba(164,40,76,.18),transparent 35%),#171015}.video-section .content-grid{align-items:center}.video-frame{width:min(100%,28rem);margin-inline:auto;overflow:hidden;border:1px solid rgba(217,129,155,.34);border-radius:var(--radius);background:#090708;box-shadow:var(--shadow)}.video-frame video{display:block;width:100%;height:auto;max-height:38rem;aspect-ratio:9/16;object-fit:cover;background:#090708}
+@media(max-width:48rem){.video-frame{width:min(100%,23rem)}.video-frame video{max-height:34rem}}
