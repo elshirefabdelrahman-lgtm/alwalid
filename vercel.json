@@ -6,6 +6,7 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    { "source": "/assets/images/hero/الوليد-حداد-مكة-وجدة-غلاف.webp", "destination": "/assets/images/hero/الوليد-حداد-مكة-غلاف.webp", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/:path*/index.html", "destination": "/:path*/", "permanent": true },
     { "source": "/services/", "destination": "/خدمات/", "permanent": true },
